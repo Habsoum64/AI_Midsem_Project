@@ -3,7 +3,7 @@ import pickle
 import numpy as np
 import pandas as pd
 
-with open('gb_reg.pkl', 'rb') as f:
+with open('AI_Midsem_Project/gb_reg.pkl', 'rb') as f:
     gb_reg = pickle.load(f)
 
 
