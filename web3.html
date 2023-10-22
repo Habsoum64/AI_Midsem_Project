@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FIFA Player Rating Predictor</title>
+  <link rel="stylesheet" href="web3.css">
+</head>
+<body>
+
+  <div class="summary-container">
+    <h2>Overall Rating</h2>
+
+    <div class="rating-container">
+      <div class="rating-label">Prediction:</div>
+      <div class="rating-value-box"></div>
+    </div>
+
+    <div class="accuracy-container">
+      <div class="accuracy-label">Accuracy:</div>
+      <div class="accuracy-value-box"></div>
+    </div>
+  </div>
+
+
+
+  <script>
+    const getSummaryButton = document.getElementById('get-summary-button');
+    const ratingValueBoxElement = document.querySelector('.rating-value-box');
+    const accuracyValueBoxElement = document.querySelector('.accuracy-value-box');
+
+    getSummaryButton.addEventListener('click', () => {
+      ratingValueBoxElement.classList.add('active');
+      accuracyValueBoxElement.classList.add('active');
+    });
+  </script>
+
+</body>
+</html>

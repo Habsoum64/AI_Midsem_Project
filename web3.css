@@ -1,0 +1,68 @@
+.summary-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url("932703.jpg");
+  filter: brightness(80%);
+  background-size: cover;
+  background-position: center;
+}
+
+h2 {
+  font-family: "Roboto Mono", sans-serif;
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px #680a0a;
+  color: #fff;
+  animation: float 3s infinite ease-in-out;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+.rating-container,
+.accuracy-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 500px;
+  margin-bottom: 1rem;
+}
+
+.rating-label,
+.accuracy-label {
+  font-family: "Roboto Mono", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.rating-value-box,
+.accuracy-value-box {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  background: #100e0e;
+  transition: all 0.5s ease-in-out;
+}
+
+
+.rating-value-box.active::before,
+.accuracy-value-box.active::before {
+  border-color: #520f0f;
+}
