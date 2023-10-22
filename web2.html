@@ -18,83 +18,58 @@
       <div class="prediction-form">
         <h2>Craft Your Player</h2>
 
-        <form id="predictionForm">
+        <form action="http://localhost:8501/" method="get" target="streamlit_iframe">
           <label for="shortName">Short Name:</label>
-          <input type="text" id="shortName" name="shortName"><br>
+          <input type="text" id="shortName" name="shortName" required><br>
 
           <label for="longName">Long Name:</label>
-          <input type="text" id="longName" name="longName"><br>
+          <input type="text" id="longName" name="longName" required><br>
 
           <label for="dob">Date of Birth:</label>
-          <input type="date" id="dob" name="dob"><br>
+          <input type="date" id="dob" name="dob" required><br>
 
           <label for="clubName">Club Name:</label>
-          <input type="text" id="clubName" name="clubName"><br>
+          <input type="text" id="clubName" name="clubName" required><br>
 
           <label for="potential">Potential:</label>
-          <input type="number" id="potential" name="potential" min="0" max="100"><br>
+          <input type="number" id="potential" name="potential" min="0" max="100" required><br>
 
           <label for="valueEur">Value (in EUR):</label>
-          <input type="number" id="valueEur" name="valueEur" min="0" max="100"><br>
+          <input type="number" id="valueEur" name="valueEur" min="0" max="100" required><br>
 
           <label for="wageEur">Wage (in EUR):</label>
-          <input type="number" id="wageEur" name="wageEur" min="0" max="100"><br>
+          <input type="number" id="wageEur" name="wageEur" min="0" max="100" required><br>
 
           <label for="releaseClauseEur">Release Clause (in EUR):</label>
-          <input type="number" id="releaseClauseEur" name="releaseClauseEur" min="0" max="100"><br>
-          
+          <input type="number" id="releaseClauseEur" name="releaseClauseEur" min="0" max="100" required><br>
 
-          
-        </form>
-      </div>
-      
-      <div class="prediction-attributes">
         <h2>Shape Their Skills</h2>
 
-        <div class="attribute-row">
-            <div class="attribute-label">Passing</div>
-            <div class="attribute-input">
-                <input type="number" min="0" max="100" value="50" id="passing" name="passing">
-            </div>
-        </div>
-        
-        <div class="attribute-row">
-            <div class="attribute-label">Dribbling</div>
-            <div class="attribute-input">
-                <input type="number" min="0" max="100" value="50" id="dribbling" name="dribbling">
-            </div>
-        </div>
-        
-        <div class="attribute-row">
-            <div class="attribute-label">Attacking Short Passing</div>
-            <div class="attribute-input">
-                <input type="number" min="0" max="100" value="50" id="attackingShortPassing" name="attackingShortPassing">
-            </div>
-        </div>
-        
-        <div class="attribute-row">
-            <div class="attribute-label">Movement Reactions</div>
-            <div class="attribute-input">
-                <input type="number" min="0" max="100" value="50" id="movementReactions" name="movementReactions">
-            </div>
-        </div>
-        
-        <div class="attribute-row">
-            <div class="attribute-label">Power Shot Power</div>
-            <div class="attribute-input">
-                <input type="number" min="0" max="100" value="50" id="powerShotPower" name="powerShotPower">
-            </div>
-        </div>
-        
-        <div class="attribute-row">
-            <div class="attribute-label">Mentality Vision</div>
-            <div class="attribute-input">
-                <input type="number" min="0" max="100" value="50" id="mentalityVision" name="mentalityVision">
-            </div>
-        </div>
-        
-        <button id="get-summary-button" onclick="location.href='web3.html'">Get Overall</button>
+          <label for="passing">Passing:</label>
+          <input type="number" min="0" max="100" value="50" id="passing" name="passing" required>
+
+          <label for="dribbling">Dribbling:</label>
+          <input type="number" min="0" max="100" value="50" id="dribbling" name="dribbling" required>
+
+          <label for="attackingShortPassing">Attacking Short Passing:</label>
+          <input type="number" min="0" max="100" value="50" id="attackingShortPassing" name="attackingShortPassing" required>
+
+          <label for="movementReactions">Movement Reactions:</label>
+          <input type="number" min="0" max="100" value="50" id="movementReactions" name="movementReactions" required>
+
+          <label for="powerShotPower">Power Shot Power:</label>
+          <input type="number" min="0" max="100" value="50" id="powerShotPower" name="powerShotPower" required>
+
+          <label for="mentalityVision">Mentality Vision:</label>
+          <input type="number" min="0" max="100" value="50" id="mentalityVision" name="mentalityVision" required>
+
+          <label for="mentalityComposure">Mentality Composure:</label>
+          <input type="number" min="0" max="100" value="50" id="mentalityComposure" name="mentalityComposure" required>
+
+          <button id="get-summary-button" onclick="location.href='web3.html'">Get Overall</button>
+        </form>
+      </div>
     </div>
+  </main>
 </body>
-    
-       
+</html>
