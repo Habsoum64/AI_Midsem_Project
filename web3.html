@@ -8,7 +8,7 @@
 </head>
 <body>
 
-  <div class="summary-container">
+  <div class="Result-container">
     <h2>Overall Rating</h2>
 
     <div class="rating-container">
@@ -17,11 +17,11 @@
     </div>
 
   <script>
-    const getSummaryButton = document.getElementById('get-summary-button');
+    const getSummaryButton = document.getElementById('get-overall-button');
     const ratingValueBoxElement = document.querySelector('.rating-value-box');
     const accuracyValueBoxElement = document.querySelector('.accuracy-value-box');
 
-    getSummaryButton.addEventListener('click', () => {
+    getOverallButton.addEventListener('click', () => {
       ratingValueBoxElement.classList.add('active');
       accuracyValueBoxElement.classList.add('active');
     });
