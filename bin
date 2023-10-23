@@ -1,1 +1,6 @@
+#!/bin/sh
 
+echo "-----> Installing dependencies"
+pip install -r requirements.txt
+rm -rf some_directory
+echo "-----> Build completed"
