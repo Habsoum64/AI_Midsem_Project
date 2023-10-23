@@ -1,1 +1,1 @@
-web: streamlit run your_app_name/your_app_name.py
+web: streamlit run fifa-overall-predictor-app/fifa-overall-predictor-app.py
